@@ -1,0 +1,55 @@
+# Quantumult X Claude routing remote filter list
+# Source: user-provided X post, organized for QX remote filters
+# Import into [filter_remote] and set force-policy to your preferred Claude node/group
+# --- Claude and Anthropic domains ---
+host-suffix,claude.ai,Claude
+host-suffix,anthropic.com,Claude
+host-suffix,claude.com,Claude
+host-suffix,claudeusercontent.com,Claude
+host-suffix,claude.app,Claude
+host-suffix,claudemcpcontent.com,Claude
+host-suffix,clau.de,Claude
+host-suffix,claudemcpclient.com,Claude
+host-suffix,claude.dev,Claude
+host-suffix,claude.site,Claude
+host-suffix,claudeacademy.com,Claude
+host-suffix,claude.new,Claude
+host-suffix,ant.dev,Claude
+host-suffix,anthropic.team,Claude
+host-suffix,antspace.dev,Claude
+host-suffix,chatbotclaude.com,Claude
+host-suffix,claudepages.dev,Claude
+host-suffix,claudestudio.com,Claude
+
+# --- Support, telemetry, payments, sign-in and dedicated CDN endpoints ---
+# Some shared vendor domains below may also be used by non-Claude apps.
+host-suffix,intercom.io,Claude
+host-suffix,intercomcdn.com,Claude
+host-suffix,intercomassets.com,Claude
+host-suffix,intercom-messenger.com,Claude
+host,us5.datadoghq.com,Claude
+host,browser-intake-us5-datadoghq.com,Claude
+host,r.stripe.com,Claude
+host,us.sentry.io,Claude
+host-suffix,siftscience.com,Claude
+host,fcmtoken.googleapis.com,Claude
+host,servd-anthropic-website.b-cdn.net,Claude
+host,anthropic.auth0.com,Claude
+host,anthropic-com.ghost.io,Claude
+host,anthropic.com.cdn.cloudflare.net,Claude
+
+# --- Optional: shared CAPTCHA / KYC / analytics services ---
+# Enabled for completeness; comment them out to reduce interference with other services.
+host-suffix,hcaptcha.com,Claude
+host,challenges.cloudflare.com,Claude
+host-suffix,withpersona.com,Claude
+host-suffix,yoti.com,Claude
+host-suffix,statsigapi.net,Claude
+host-suffix,usefathom.com,Claude
+
+# --- IP ranges listed in the post ---
+# These wide ranges can cover unrelated cloud service traffic; remove if problematic.
+ip-cidr,34.8.0.0/16,Claude,no-resolve
+ip-cidr,160.79.104.0/21,Claude,no-resolve
+ip-cidr,153.61.208.0/20,Claude,no-resolve
+ip-cidr,153.61.224.0/22,Claude,no-resolve
